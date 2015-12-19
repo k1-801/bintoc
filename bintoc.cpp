@@ -156,6 +156,7 @@ void process()
         "#include <stdint.h>\n\n"
         "extern uint8_t %s[%i];\n"
         "extern int %s_size;", fname.c_str(), vname.c_str(), fsize, vname.c_str());
+    fclose(out);
 }
 
 int main(int argc, char** argv)
